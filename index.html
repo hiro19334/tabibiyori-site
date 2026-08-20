@@ -8,12 +8,12 @@
 <style>
   :root{
     --bg:#fdfcfa; --fg:#2b2b2b; --muted:#6b6b6b; --line:#e3e0da;
-    --accent:#1f6f5c; --card:#ffffff; --warn:#8a5a00; --warnbg:#fff8e8;
+    --accent:#1f6f5c; --card:#ffffff; --warn:#8a5a00; --warnbg:#fff8e8; --prbg:#f1f4f2;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       --bg:#16181a; --fg:#e8e6e1; --muted:#a3a09a; --line:#2f3336;
-      --accent:#6fbfa6; --card:#1d2022; --warn:#e0b055; --warnbg:#2a2317;
+      --accent:#6fbfa6; --card:#1d2022; --warn:#e0b055; --warnbg:#2a2317; --prbg:#1e2624;
     }
   }
   *{box-sizing:border-box}
@@ -58,6 +58,30 @@
   }
   a{color:var(--accent)}
   .updated{font-size:.85rem; color:var(--muted); margin-top:20px}
+  .pr{
+    font-size:1rem; color:var(--fg); margin:20px 0 0;
+    padding:14px 16px; background:var(--prbg); border-left:5px solid var(--accent);
+    border-radius:0 6px 6px 0; line-height:1.7;
+  }
+  .pr strong{display:block; margin-bottom:4px}
+  .pr .sub{font-size:.94rem}
+  .aff{
+    background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:0 8px 8px 0; padding:16px 18px; margin:8px 0 24px;
+  }
+  .aff p{margin:0 0 10px; font-size:.95rem}
+  .aff p:last-child{margin:0}
+  .aff .tag{
+    display:inline-block; font-size:.92rem; font-weight:600; color:var(--fg);
+    background:var(--prbg); border:1px solid var(--accent); border-radius:3px;
+    padding:2px 10px; margin-bottom:10px;
+  }
+  .aff .amz{font-size:.86rem; color:var(--muted); margin-top:10px}
+  .aff a{font-weight:600}
+  .disclosure{
+    font-size:.84rem; color:var(--muted); line-height:1.7;
+    border-top:1px solid var(--line); margin-top:16px; padding-top:16px;
+  }
 </style>
 </head>
 <body>
@@ -68,6 +92,11 @@
   <p class="lead">
     宮崎在住の夫婦が書いている、旅行の計画段階でつまずきやすいところのメモです。
     観光地の紹介ではなく、<strong>日程を組むときに知らないと計算が狂うこと</strong>を中心に書いています。
+  </p>
+  <p class="pr">
+    <strong>広告（アフィリエイト）を含みます</strong>
+    <span class="sub">このページには楽天アフィリエイト・Amazonアソシエイトのリンクを含みます。
+    リンク経由で予約・購入があると、運営者に報酬が入ります。</span>
   </p>
 </header>
 
@@ -133,7 +162,7 @@
 
 <p>
   いちばんよく聞かれるのが「高千穂って宮崎市から近いですか？」です。
-  答えは<strong>車で2時間半から3時間</strong>。同じ県内ですが、県境を越えて熊本や大分に出るほうが近いこともあります。
+  <strong>宮崎市からは車で2時間半〜3時間ほど</strong>見ておくと安心です（うちの体感で、休憩や渋滞で前後します）。同じ県内ですが、県境を越えて熊本や大分に出るほうが近いこともあります。
 </p>
 
 <p>
@@ -145,7 +174,7 @@
   <strong>高千穂峡の駐車場について（2026年8月に伺った話）</strong><br>
   駐車場が数か所あり、<strong>渓谷に近い順に料金が高く、近いところから満車になる</strong>そうです。
   遠いところに停めると、帰りが上り坂になります。<br>
-  巡回の乗り合いタクシーがあり、<strong>1人300円ほどで本数も多かった</strong>と聞きました。
+  巡回の乗り合いタクシーがあり、<strong>本数も多かった</strong>と聞きました。数百円ほどだったそうです。
   「行きは歩いて、帰りは乗る」が良さそうです。<br>
   <span style="font-size:.9em">※料金や運行は変わることがあります。おでかけ前に公式の案内をご確認ください。</span>
 </div>
@@ -174,6 +203,20 @@
   そのぶん県内は片側しか見られません。
 </p>
 
+<!-- rakuten -->
+<!-- LINK待ち：リンクを差し替えたら、この行と直後の閉じコメントを外す
+<div class="aff">
+  <span class="tag">PR</span>
+  <p>
+    2泊とれるかどうかで、見られる範囲がはっきり変わります。
+    日程を決めるより先に宿の空きを見ておくと、県北か県南かの判断が早いです。
+  </p>
+  <p><a href="__RAKUTEN_LINK__" rel="sponsored nofollow">楽天トラベルで宮崎の宿を見る</a></p>
+</div>
+-->
+<!-- /pr -->
+
+
 <h2>5. 季節のこと</h2>
 
 <h3>夏に来るなら</h3>
@@ -188,6 +231,21 @@
   地元の人間が夏に外を歩かないのは、暑いからというより<strong>逃げ場がないから</strong>です。
   朝と夕方に予定を寄せて、昼は屋内で過ごす。この時間配分が、住んでいると自然と身につきます。
 </p>
+
+<!-- amazon -->
+<!-- LINK待ち：リンクを差し替えたら、この行と直後の閉じコメントを外す
+<div class="aff">
+  <span class="tag">PR</span>
+  <p>
+    うちが夏の外出で必ず持っているのは折り畳みの日傘です。
+    荷物にならないので、旅行のときもカバンに入れっぱなしにしています。
+  </p>
+  <p><a href="__AMAZON_LINK__" rel="sponsored nofollow">うちが使っている折り畳み日傘</a></p>
+  <p class="amz">Amazonのアソシエイトとして、宮崎発 たび日和は適格販売により収入を得ています。</p>
+</div>
+-->
+<!-- /pr -->
+
 
 <h3>いちばん過ごしやすいのは秋</h3>
 
@@ -245,7 +303,7 @@
   聞きたいことがあれば、Threads のほうで聞いてください。だいたい返しています。
 </p>
 
-<p class="updated">最終更新：2026年8月</p>
+<p class="updated">最終更新：2026年8月20日</p>
 
 <footer>
   <p>
@@ -254,11 +312,19 @@
   </p>
   <p>
     Threads: <a href="https://www.threads.com/@miyazaki_tabi_biyori">@miyazaki_tabi_biyori</a>
+    ｜<a href="./privacy.html">プライバシーポリシー</a>
   </p>
   <p style="font-size:.85em">
     このページの情報は、記載時点で確認できた内容と、実際に宮崎へ来られた方から伺った話をまとめたものです。
     料金・所要時間・運行状況は変わることがあります。おでかけの際は公式の案内をご確認ください。
   </p>
+
+  <div class="disclosure">
+    <p>
+      このページにはアフィリエイト広告を含みます。<br>
+      Amazonのアソシエイトとして、宮崎発 たび日和は適格販売により収入を得ています。
+    </p>
+  </div>
 </footer>
 
 </div>
